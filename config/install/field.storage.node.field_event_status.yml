@@ -1,0 +1,29 @@
+uuid: e8555c93-c29d-43b8-8c4f-fce2577f4177
+langcode: en
+status: true
+dependencies:
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+id: node.field_event_status
+field_name: field_event_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Active
+      label: Active
+    -
+      value: Completed
+      label: Completed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

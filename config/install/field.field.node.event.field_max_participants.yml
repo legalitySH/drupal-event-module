@@ -1,0 +1,28 @@
+uuid: dd4c453c-4f3b-40ee-995d-37183a88dd85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_max_participants
+    - node.type.event
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+id: node.event.field_max_participants
+field_name: field_max_participants
+entity_type: node
+bundle: event
+label: 'Max participants'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 10000000
+  prefix: ''
+  suffix: ''
+field_type: integer

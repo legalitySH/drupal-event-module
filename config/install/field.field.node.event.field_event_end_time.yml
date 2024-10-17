@@ -1,0 +1,26 @@
+uuid: 10dfea78-4296-4076-a6c9-343c9d302db2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_end_time
+    - node.type.event
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+id: node.event.field_event_end_time
+field_name: field_event_end_time
+entity_type: node
+bundle: event
+label: 'End time'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1728573632
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

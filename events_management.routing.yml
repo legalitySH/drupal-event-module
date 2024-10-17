@@ -1,0 +1,21 @@
+events_management.event_registration:
+  path: '/event/{event_id}/register'
+  defaults:
+    _form: '\Drupal\events_management\Form\EventRegistrationForm'
+    _title: 'Event registration'
+  requirements:
+    _permission: 'access content'
+
+events_management.guest_page:
+  path: '/event/{event}/guests'
+  defaults:
+    _title: 'Guest Page'
+    _controller: '\Drupal\events_management\Controller\GuestPageController::view'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      event:
+        type: 'entity:node'
+        bundle:
+          - event

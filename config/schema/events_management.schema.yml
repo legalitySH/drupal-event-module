@@ -1,0 +1,7 @@
+block.settings.events_management_weather:
+  type: block_settings
+  label: 'Weather block'
+  mapping:
+    example:
+      type: string
+      label: Block that contains weather info of event location

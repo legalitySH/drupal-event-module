@@ -1,0 +1,22 @@
+uuid: 088a50fa-51d5-4fa0-9817-f6aec8359f91
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - events_management
+id: node.field_event_id
+field_name: field_event_id
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

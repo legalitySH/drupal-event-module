@@ -1,0 +1,16 @@
+uuid: e7525f55-2ff2-4ef3-8d07-2753c5d55934
+langcode: en
+status: true
+dependencies:
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+name: Event
+type: event
+description: 'Event entity'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

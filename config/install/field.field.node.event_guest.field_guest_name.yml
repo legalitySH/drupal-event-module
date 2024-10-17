@@ -1,0 +1,22 @@
+uuid: 6a91d1fc-b06b-41ef-b221-ab6f43b8eb80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guest_name
+    - node.type.event_guest
+  enforced:
+    module:
+      - events_management
+id: node.event_guest.field_guest_name
+field_name: field_guest_name
+entity_type: node
+bundle: event_guest
+label: 'Guest Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

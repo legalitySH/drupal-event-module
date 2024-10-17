@@ -1,0 +1,22 @@
+uuid: 4a4d8aee-99da-4150-9024-ce505b44b856
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guest_uuid
+    - node.type.event_guest
+  enforced:
+    module:
+      - events_management
+id: node.event_guest.field_guest_uuid
+field_name: field_guest_uuid
+entity_type: node
+bundle: event_guest
+label: UUID
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

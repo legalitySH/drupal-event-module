@@ -1,0 +1,26 @@
+uuid: e92b736d-4631-4220-a996-8cd801b6ce9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - events_management
+
+id: event_guest_pattern
+label: 'Event guest pattern'
+type: 'canonical_entities:node'
+pattern: '/event_guest/[node:nid]'
+selection_criteria:
+  f1f21d30-26d7-4d27-8ec3-97ed72b220e6:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f1f21d30-26d7-4d27-8ec3-97ed72b220e6
+    context_mapping:
+      node: node
+    bundles:
+      event_guest: event_guest
+selection_logic: and
+weight: -5
+relationships: {  }

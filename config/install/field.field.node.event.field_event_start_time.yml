@@ -1,0 +1,26 @@
+uuid: 62b15b78-b2b7-4363-afaf-7cff817b84d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_start_time
+    - node.type.event
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+id: node.event.field_event_start_time
+field_name: field_event_start_time
+entity_type: node
+bundle: event
+label: 'Start time'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1728573604
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

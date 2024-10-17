@@ -1,0 +1,82 @@
+uuid: 47c02588-a934-4306-923e-5bb14b956c09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_event_description
+    - field.field.node.event.field_event_end_time
+    - field.field.node.event.field_event_start_time
+    - field.field.node.event.field_event_status
+    - field.field.node.event.field_location
+    - field.field.node.event.field_max_participants
+    - node.type.event
+  module:
+    - geofield
+    - options
+    - user
+  enforced:
+    module:
+      - events_management
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_event_descrip:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_event_end_time:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_event_start_time:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_event_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_location:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_max_participants:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

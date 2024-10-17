@@ -1,0 +1,23 @@
+uuid: 6333fddb-6c8c-4480-8b69-e24701d384bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+id: node.field_max_participants
+field_name: field_max_participants
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

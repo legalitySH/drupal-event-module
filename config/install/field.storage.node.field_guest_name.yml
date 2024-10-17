@@ -1,0 +1,24 @@
+uuid: 68298954-1da0-4908-8fb5-a801f6a5ba61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - events_management
+id: node.field_guest_name
+field_name: field_guest_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

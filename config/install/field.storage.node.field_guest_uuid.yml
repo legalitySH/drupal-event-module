@@ -1,0 +1,24 @@
+uuid: cba9d732-9eb5-43ab-af71-44b0a5378fb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - events_management
+id: node.field_guest_uuid
+field_name: field_guest_uuid
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

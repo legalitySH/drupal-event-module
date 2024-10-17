@@ -1,0 +1,16 @@
+uuid: 4f35101b-84d2-4225-9317-70cb3598dcff
+langcode: en
+status: true
+dependencies:
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+name: 'Event guest'
+type: event_guest
+description: 'This content type is used to store event registrations.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,27 @@
+uuid: 46e3940f-79d7-447f-beb0-0c686a0fbdfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_id
+    - node.type.event
+    - node.type.event_guest
+  enforced:
+    module:
+      - events_management
+id: node.event_guest.field_event_id
+field_name: field_event_id
+entity_type: node
+bundle: event_guest
+label: 'Event ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+field_type: entity_reference

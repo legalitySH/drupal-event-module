@@ -1,0 +1,22 @@
+uuid: a85e68e1-cfe4-4ddd-bf2a-8ca7124f2466
+langcode: en
+status: true
+dependencies:
+  module:
+    - events_management
+  enforced:
+    module:
+      - events_management
+id: node.field_location
+field_name: field_location
+entity_type: node
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

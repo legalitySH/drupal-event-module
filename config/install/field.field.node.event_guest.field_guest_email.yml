@@ -1,0 +1,22 @@
+uuid: 1ec1c50c-695d-48f3-994f-cde2f43d0d01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_guest_email
+    - node.type.event_guest
+  enforced:
+    module:
+      - events_management
+id: node.event_guest.field_guest_email
+field_name: field_guest_email
+entity_type: node
+bundle: event_guest
+label: 'Guest Email'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,8 @@
+services:
+  events_management.event_registration_service:
+    class: Drupal\events_management\EventRegistrationService
+    arguments: ['@entity_type.manager']
+  events_management.weather_service:
+    class: Drupal\events_management\WeatherService
+    arguments: ['@http_client', '@cache.default']
+

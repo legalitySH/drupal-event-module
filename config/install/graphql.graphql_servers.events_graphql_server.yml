@@ -1,0 +1,20 @@
+uuid: 362b4009-f18b-4789-8448-4b5b57fe91fc
+langcode: en
+status: true
+dependencies: {  }
+name: events_graphql_server
+label: 'GraphQL Events'
+endpoint: /api/graphql
+debug_flag: 1
+schema: events_management
+caching: true
+batching: true
+disable_introspection: false
+query_depth: null
+query_complexity: null
+schema_configuration:
+  composable:
+    extensions: {  }
+persisted_queries_settings:
+  automatic_persisted_query:
+    weight: 0

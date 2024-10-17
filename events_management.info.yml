@@ -1,0 +1,15 @@
+name: 'Events module'
+description: 'Creates a module for event management'
+type: module
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:node
+  - drupal:graphql
+  - drupal:views
+  - drupal:field
+  - drupal:block
+  - drupal:geofield
+  - drupal:leaflet
+  - drupal:pathauto
+

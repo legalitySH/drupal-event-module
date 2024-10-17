@@ -1,0 +1,57 @@
+uuid: 4886c6af-283a-47a2-b068-06537cbc03e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event_guest.field_event_id
+    - field.field.node.event_guest.field_guest_email
+    - field.field.node.event_guest.field_guest_name
+    - field.field.node.event_guest.field_guest_uuid
+    - node.type.event_guest
+  module:
+    - user
+  enforced:
+    module:
+      - events_management
+id: node.event_guest.default
+targetEntityType: node
+bundle: event_guest
+mode: default
+content:
+  field_event_id:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_guest_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_guest_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_guest_uuid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

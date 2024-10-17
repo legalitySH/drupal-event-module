@@ -1,0 +1,27 @@
+<?php declare(strict_types=1);
+
+/**
+ * @file
+ * Provides an event entity type.
+ */
+
+use Drupal\events_management\Entity\Event;
+
+/** Implements hook_theme() */
+function events_management_theme(): array {
+  return [
+    'weather-block' => [
+      'variables' => [
+        'weather' => NULL
+      ],
+      'template' => 'weather-block'
+    ]
+  ];
+}
+
+/** Implements hook_entity_bundle_info_alter() */
+function events_management_entity_bundle_info_alter(array &$bundles): void {
+  if (isset($bundles['node']['event'])) {
+    $bundles['node']['event']['class'] = Event::class;
+  }
+}

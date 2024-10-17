@@ -1,0 +1,38 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  event(id: Int!): Event
+  activeEvents(offset: Int = 0, limit: Int = 10): ActiveEvents!
+}
+
+type Mutation {
+  registerForEvent(eventId: Int, uid: Int, name: String, email: String): RegistrationResult
+}
+
+type Event @entity(type: "node", bundle: "event") {
+  id: Int!
+  title: String! @resolveProperty(path: "title.value")
+  description: String! @resolveProperty(path: "field_event_description.value")
+  start_date: String! @resolveProperty(path: "field_event_start_time.value")
+  end_date: String! @resolveProperty(path: "field_event_end_time.value")
+  status: String! @resolveProperty(path: "field_event_status.value")
+  location: String! @resolveProperty(path: "field_location.value")
+  max_participants: Int! @resolveProperty(path: "field_max_participants.value")
+}
+
+type ActiveEvents  {
+  total_count: Int!
+  events: [EventEdge]!
+}
+
+type RegistrationResult {
+  success: Boolean!
+  message: String!
+}
+
+type EventEdge {
+  node: Event!
+}

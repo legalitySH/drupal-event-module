@@ -54,7 +54,8 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface
 
         $build['#theme'] = 'weather-block';
         $build['#cache'] = [
-          'max-age' => 0
+          'max-age' => 600,
+          'tags' => ["node:{$node->id()}"],
         ];
 
         return $build;

@@ -2,8 +2,8 @@
 
 namespace Drupal\events_management\Plugin\Block;
 
+use Drupal\Core\Block\Annotation\Block;
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Cron;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use Symfony\Component\DependencyInjection\ContainerInterface;

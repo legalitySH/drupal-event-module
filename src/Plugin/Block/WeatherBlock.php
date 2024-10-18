@@ -5,6 +5,7 @@ namespace Drupal\events_management\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Cron;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use GuzzleHttp\Exception\GuzzleException;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\events_management\WeatherService;
 
@@ -37,6 +38,7 @@ class WeatherBlock extends BlockBase implements ContainerFactoryPluginInterface
 
   /**
    * {@inheritdoc}
+   * @throws GuzzleException
    */
   public function build(): array
   {

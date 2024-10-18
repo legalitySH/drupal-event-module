@@ -1,7 +1,10 @@
 uuid: 362b4009-f18b-4789-8448-4b5b57fe91fc
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - events_management
 name: events_graphql_server
 label: 'GraphQL Events'
 endpoint: /api/graphql

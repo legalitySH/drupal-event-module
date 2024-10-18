@@ -27,7 +27,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_event_descrip:
+  field_event_description:
     type: string_textarea
     weight: 124
     region: content
